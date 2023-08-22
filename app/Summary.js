@@ -4,13 +4,11 @@ function Summary({ formData }) {
     return (
         <div id="summary">
             <h2>Summary</h2>
-            <p>Form Type: </p>
-            <p>Age: </p>
+            <p>Form Type: {formData.step == 2 ? "Form A" : "Form B"} </p>
+            <p>Age: {formData.age}</p>
 
-            <p>DC Shows: </p>
 
-            <p>Marvel Shows: </p>
-
+            {formData == 2 ? <p>DC Shows: {formData.val}</p> : <p>Marvel Shows: {formData.val}</p>}
         </div>
     );
 }
