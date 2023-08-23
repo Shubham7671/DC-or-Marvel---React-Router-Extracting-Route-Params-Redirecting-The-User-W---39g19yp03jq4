@@ -21,7 +21,7 @@ const App = () => {
           <h1>Step 1: Select Form Type and Enter Age</h1>
           <label>
             Enter your age:
-            <input value={age} onChange={(e) => { setAge(e.target.value) }} />
+            <input type="number" value={age} onChange={(e) => { setAge(e.target.value) }} />
           </label>
           <br />
           <label>
